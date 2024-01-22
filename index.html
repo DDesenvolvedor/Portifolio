@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHRL.portifólio</title>
+    <link rel="shortcut icon" href="../img/logosfundo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+  
+       
+    
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3"></script>
+        <script src="script.js"></script>
+  
+    
+
+
+
+
+    <header>
+     
+     
+
+        <div id="app">
+            <header-component></header-component>
+    
+            <nav id="menu" class="menu">
+                <h1>Diogo Henrique Ribeiro Lisboa</h1>
+                <button id="toggleButton" @click="toggleMenu">Menu</button>
+                <ul v-show="isMenuVisible">
+                    <li><a href="#projects">Curriculo</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+    
+    
+        </div>
+       
+        <p>Desenvolvedor Web</p>
+    </header>
+
+    <section id="projects">
+        
+        
+      
+        <h2>PROJETOS</h2>
+        <a href="https://diogohrl.github.io/previs-o-do-tempo/">
+        <div class="project" onclick="openProject('project1')">
+            <h3>Projeto 1</h3>
+            <p>Uma pagina basica de previsão do tempo do mundo inteiro</p>
+        </div>
+    </a>
+
+    <a href="https://diogohrl.github.io/previs-o-do-tempo/">
+        <div class="project" onclick="openProject('project2')">
+            <h3>Projeto 1</h3>
+            <p>Uma pagina basica de previsão do tempo do mundo inteiro</p>
+        </div>
+    </a>
+
+    <a href="https://diogohrl.github.io/previs-o-do-tempo/">
+        <div class="project" onclick="openProject('project3')">
+            <h3>Projeto 1</h3>
+            <p>Uma pagina basica de previsão do tempo do mundo inteiro</p>
+        </div>
+    </a>
+
+    <a href="https://diogohrl.github.io/previs-o-do-tempo/">
+        <div class="project" onclick="openProject('project4')">
+            <h3>Projeto 1</h3>
+            <p>Uma pagina basica de previsão do tempo do mundo inteiro</p>
+        </div>
+    </a>
+
+    <a href="https://diogohrl.github.io/previs-o-do-tempo/">
+        <div class="project" onclick="openProject('project5')">
+            <h3>Projeto 1</h3>
+            <p>Uma pagina basica de previsão do tempo do mundo inteiro</p>
+        </div>
+    </a>
+
+
+      
+        <!-- Adicione mais projetos conforme necessário -->
+    </section>
+
+    <section id="project-details" class="hidden">
+        <button onclick="closeProject()">Fechar</button>
+        <h2 id="project-title"></h2>
+        <p id="project-description"></p>
+        <!-- Adicione mais detalhes do projeto conforme necessário -->
+    </section>
+    <div id="app">   </div>
+
+    <script src="https://unpkg.com/vue@2"></script>
+    <script src="https://unpkg.com/gsap@3"></script>
+    <script src="..//scripts.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+   
+</body>
+</html>
