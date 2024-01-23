@@ -259,7 +259,7 @@ width:30%;
     }
 
     .menu-btn{
-    background:url(..//img/menu.png)no-repeat ;
+    background:url(menu.png)no-repeat ;
     background-size:60px ;
     background-position: center;
     width: 40px;
@@ -273,7 +273,7 @@ width:30%;
 }
 .menu-btn.active{
     z-index: 999;
-    background: url(..//img/sair.png)no-repeat;
+    background: url(sair.png)no-repeat;
     background-size:30px ;
     background-position: center;
     width: 40px;
