@@ -9,51 +9,47 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-
-
-    <header class="content">  
-
-
-        
-        <div class="logo-pizzahub">
-            <img src="logosfundo.png" alt="">
-            
-        </div>
-        <h3>Diogo Henrique Ribeiro Lisboa</h3>
-        <nav>
-            <ul class="list-menu">
-                <li>
-                    <a href="">Curriculo</a>
-                </li>
-                    
-                <li>
-                    <a href="#cardapio">Contato</a>
-                </li>
+    <section class="home">
+    <header>
+        <a href="#" class="brand">Meu Portifólio</a>
+        <div class="menu-btn"></div>
+        <div class="navegacao">
+            <div class="navegacao-itens">
+                <a href="#"> Curriculo</a>
+                <a href="https://wa.me/11987854493">WhatsApp</a>
+                <a href="mailto:diogolisboa720@gmail.com">E-mail</a>
                
-            </ul>
-        </nav>
-        
-       
-    
+            </div>
+
+        </div>
     </header>
+
+    
+    <script type="text/javascript">
+        
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navegacao");
+      
+
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        </script>
+
 
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/diogo-henrique-34997a265/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BJOOBqsdASEOhPlN%2BgpToHg%3D%3D" target="_blank">
           <img src=".//img/linkedin (1).png" alt="linkedin">
         </a>
-        <a href="https://wa.me/11987854493" target="_blank">
-          <img src=".//img/whats-removebg-preview.png" alt="WhatsApp">
-        </a>
-        <a href="mailto:diogolisboa720@gmail.com" target="_blank">
-          <img src=".//img/gmail-removebg-preview.png" alt="E-mail">
-        </a>
-      </div>
+        
     </section>
 
     <section id="projects">
         
         
-      
+
         <h2>PROJETOS</h2>
         <a href="https://diogohrl.github.io/previs-o-do-tempo/">
         <div class="project" onclick="openProject('project1')">
@@ -65,7 +61,7 @@
     <a href="https://japp2203.github.io/JDEMNEWS/JdemNews.html">
         <div class="project" onclick="openProject('project2')">
             <h3>JDMEM NEWS</h3>
-            <p>Um site de noticias, criado para a apresentação do meiu TCC </p>
+            <p>Um site de noticias, criado para a apresentação do meu TCC </p>
         </div>
     </a>
 
@@ -76,10 +72,10 @@
         </div>
     </a>
 
-    <a href="https://diogohrl.github.io/previs-o-do-tempo/">
+    <a href="https://diogohrl.github.io/viagens.1.2/">
         <div class="project" onclick="openProject('project4')">
-            <h3>Projeto 1</h3>
-            <p>Uma pagina basica de previsão do tempo do mundo inteiro</p>
+            <h3>Viagens</h3>
+            <p>Bons motivos oara viajar   OBS:imagens não são compativeis com o site de hospedagem</p>
         </div>
     </a>
 
